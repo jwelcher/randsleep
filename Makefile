@@ -3,7 +3,6 @@
 ###
 
 SHELL   = /bin/sh
-CC      = gcc
 RM      = /bin/rm
 CWD     = `pwd`
 
@@ -18,7 +17,7 @@ OBJECTS         = $(SOURCES:.c=.o)
 FLAGS           =
 CFLAGS          = 
 DEBUGFLAGS      = -O0 -D _DEBUG
-RELEASEFLAGS    = -O2 -D NDEBUG -combine -fwhole-program
+RELEASEFLAGS    = -O2 -D NDEBUG
 
 PREFIX          = $(DESTDIR)/usr/local
 BINDIR          = $(PREFIX)/bin
